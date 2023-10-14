@@ -21,6 +21,7 @@ pipeline {
             steps {
                 // Add your build steps here if needed
                 // For example, you can run build scripts, compile code, etc.
+                sh 'echo "Building..."'
             }
         }
         
