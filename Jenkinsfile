@@ -12,7 +12,7 @@ pipeline {
                     deleteDir()
                     
                     // Clone the Git repository into the specified folder
-                    checkout scm: [$class: 'GitSCM', branches: [[name: '*/develop']], userRemoteConfigs: [[url: 'https://github.com/your/repo.git']]], poll: false, workspaceUpdater: [$class: 'UpdateUpdater']
+                    checkout scm: [$class: 'GitSCM', branches: [[name: '*/develop']], userRemoteConfigs: [[url: 'https://github.com/Raja3838/jenkins-1.git']]], poll: false, workspaceUpdater: [$class: 'UpdateUpdater']
                 }
             }
         }
